@@ -111,7 +111,7 @@ print(res)
 res = comb2(n, k)
 print(res)
 
-#List comprehensions
+#*args, example
 def sum(*L):
     lsum = 0
     for l in L:
