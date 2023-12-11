@@ -65,6 +65,7 @@ class Point:
     def getY(self):
         return self.__y
     
+
     def setX(self, x):
         self.__x = x
         
