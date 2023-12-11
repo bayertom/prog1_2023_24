@@ -46,7 +46,7 @@ p3.print()
 print(p1.x)
 """
 
-#Class definition
+#Class definition, getter, setter
 class Point:
     counter = 0
     
@@ -68,7 +68,6 @@ class Point:
     def setX(self, x):
         self.__x = x
         
-    def x()
 
 p1 = Point(1,1)
 p1.print()
@@ -89,6 +88,3 @@ y1 = p1.getY()
 
 p1.setX(1234)
 p1.print()
-
-
-
