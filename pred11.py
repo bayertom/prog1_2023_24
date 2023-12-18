@@ -114,6 +114,21 @@ class GO:
         
     def print(self):
         print ('GO', self.color, self.style)
+        
+#Class definition, getter, setter
+class Point(GO):
+    counter = 0
+    
+    def __init__(self, color, style, x = 0, y = 0):
+        super().__init__(color, style)
+        self.id = Point.counter
+        self.__x = x
+        self.__y = y
+        Point.counter = Point.counter + 1
+    
+    def print(self):
+        print(self.id, self.__x, self.__y)
+        
     
 #Inheritance, derived class
 class LineG(GO):
@@ -126,7 +141,11 @@ class LineG(GO):
         super().print()
         self.p1.print()
         self.p2.print()
-        
+
+#Create objects, print amount of objects
+p1 = Point(1, 2, 10, 15)
+p2 = Point(2, 3, 37, 20)
+p3 = Point(1, 3, 12, 14)      
 go = GO(1,2)
 l1 = LineG(2, 3, p1, p2)
 l1.print()
