@@ -169,13 +169,6 @@ class Point(GO):
     def __eq__(self, other):
         return (self.__x == other.__x) and (self.__y == other.__y)
 
-#Distance function
-def dist(p1, p2):
-    dx = p2.x - p1.x
-    dy = p2.y - p1.y
-    return (dx*dx + dy*dy)**0.5
-
-
 
 #Comparison, operators <, >, ==
 print(p1 < p3)
