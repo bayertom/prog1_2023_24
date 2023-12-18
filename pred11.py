@@ -115,7 +115,7 @@ class GO:
     def print(self):
         print ('GO', self.color, self.style)
         
-#Class definition, getter, setter
+#Inheritance, derived class
 class Point(GO):
     counter = 0
     
